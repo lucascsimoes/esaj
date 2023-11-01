@@ -1,0 +1,42 @@
+#banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    background-image: linear-gradient(-225deg,rgba(0, 0, 0, 0.442) 0%,rgba(44, 36, 11, 0.65) 20%),url('../../assets/media/Predio.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+#banner h2 {
+    font-size: clamp(0.625rem, 0.5843rem + 0.2326vw, 0.875rem);
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+#banner h1 {
+    text-transform: uppercase;
+    font-size: clamp(1.5rem, 1.3576rem + 0.814vw, 2.375rem);
+}
+
+#banner + .intro {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    background-color: #272727;
+    padding: 20px;
+}
+
+#banner + .intro p {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: #9d9d9d;
+}

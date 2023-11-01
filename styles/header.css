@@ -1,0 +1,111 @@
+body > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    padding-inline: 50px;
+    width: 100vw;
+    height: 80px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+    transition: transform .2s, backdrop-filter .4s, background-color .4s, left .3s !important;
+}
+
+@media (max-width: 550px) {
+    body > header {
+        padding-inline: 20px;
+    }
+}
+
+body > header.scrolled {
+    transform: translateY(0);
+    transition: transform .2s, backdrop-filter .4s, background-color .4s !important;
+}
+
+body > header > div {
+    display: flex;
+    align-items: center;
+}
+
+body > header > div:first-child > a {
+    cursor: pointer;
+}
+
+body > header > div:not(:first-child) > a {
+    color: white;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+
+body > header .divider {
+    width: 2px;
+    background-color: #3d3d3d;
+    height: 50px;
+    margin-inline: 40px;
+}
+
+@media (max-width: 750px) {
+    body > header > div:not(:first-child) > a,
+    body > header .divider {
+        display: none;
+    }
+}
+
+body > header > div:first-child img {
+    width: 45px;
+}
+
+@media (max-width: 550px) {
+    body > header > div:first-child {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+body > header > div:first-child svg {
+    min-width: 16px;
+    width: 0;
+    fill: white;
+}
+
+body > header #menuAccess {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #272727;
+    border-radius: 50%;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+body > header .socialmedia {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 550px) {
+    body > header .socialmedia {
+        display: none;
+    }
+
+    body > header > div {
+        flex-direction: row-reverse;
+    }
+
+    #menuAccess {
+        margin-left: 0 !important;
+    }
+}
+
+body > header .socialmedia > svg {
+    min-width: 22px;
+    width: 0;
+    fill: white;
+    cursor: pointer;
+}

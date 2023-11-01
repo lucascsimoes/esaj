@@ -1,0 +1,137 @@
+body > section {
+    padding: 80px;
+}
+
+body > section > h1 {
+    display: inline-block;
+    font-size: 32px;
+    margin-bottom: 60px;
+    font-style: italic;
+    position: relative;
+    z-index: 0;
+}
+
+body > section > h1::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    bottom: 3px;
+    width: 100%;
+    height: 14px;
+    transform: skew(-12deg);
+    background: #eeb95780;
+    z-index: -1;
+  }
+
+body > section p {
+    text-indent: 80px;
+    margin-bottom: 5px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+body > section .text-highlight {
+    margin-block: 20px;
+}
+
+body > section .text-highlight > * {
+    display: inline-block;
+    text-indent: 0;
+    font-weight: 500;
+    background-color: #eeb95780;
+    padding-inline: 5px;
+}
+
+body > section ul,
+body > section ol {
+    margin-block: 20px;
+    margin-left: 100px;
+}
+
+body > section ul > li,
+body > section ol > li {
+    margin-block: 8px;
+}
+
+body > section > main > a,
+body > section > div > a {
+    display: block;
+}
+
+body > section .video-container {
+    border: 10px solid #eeb95780;
+    width: 40%;
+    min-height: 400px;
+    height: 0;
+    float: right;
+    margin-left: 100px;
+    border-radius: 10px;
+    
+}
+
+body > section .video-container.mbk {
+    margin-block: 40px;
+}
+
+body > section .video-container.mb {
+    margin-bottom: 40px;
+}
+
+body > section .video-container.mt {
+    margin-top: 40px;
+}
+
+body > section .video-container.ml {
+    margin-left: 40px;
+}
+
+body > section .video-container.mr {
+    margin-right: 40px;
+}
+
+body > section .video-container.mi {
+    margin-inline: 40px;
+}
+
+body > section .video-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+body > section .text-reference {
+    margin-top: 100px;
+}
+
+body > section .text-reference *:not(h3) {
+    text-indent: 0;
+    font-size: 15px;
+}
+
+@media (max-width: 900px) {
+    body > section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* body > section > h1 {
+        width: max-content;
+    } */
+
+    body > section .video-container {
+        margin-left: 0;
+        width: 100%;
+        float: none;
+    }
+}
+
+@media (max-width: 700px) {
+    body > section {
+        padding-inline: 20px;
+    }
+
+    body > section ul,
+    body > section ol {
+        margin-left: 20px;
+    }
+}

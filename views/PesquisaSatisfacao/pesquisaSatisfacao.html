@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ESAJ - Escola de Administração Judiciária - Pesquisa de Satisfação">
+
+    <link rel="icon" href="../../assets/media/logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="../../styles/banner.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/sidenav.css">
+    <link rel="stylesheet" href="../../styles/globalStyle.css">
+
+    <title> ESAJ - Escola de Administração Judiciária </title>
+</head>
+<body>
+
+    <div id="menu" class="hidden">
+        <aside>
+            <a href="../../index.html">
+                <img width="45" height="57" alt="Logo da ESAJ" src="../../assets/media/logo_white.webp"/>
+            </a>
+            <div class="closeMenu" onclick="toggleMenu()">
+                <svg viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" d="M368 368L144 144M368 144L144 368"/></svg>
+            </div>
+        </aside>
+        <main>
+            <p> ESAJ </p>
+            <a href="../../index.html"> Início </a>
+            <a href="../Apresentacao/apresentacao.html"> Apresentação </a>
+            <a href="../Regulamentacoes/regulamentacoes.html"> Regulamentações </a>
+            <a href="../Convenios/convenios.html"> Convênios </a>
+            <a href="../Eventos/eventos.html"> Eventos </a>
+
+            <div onclick="toggleItem('cursos')"> 
+                <p> Cursos </p>  
+                <svg viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg>
+            </div>
+
+            <div onclick="toggleItem('pesquisas')"> 
+                <p> Pesquisas de Reação </p>
+                <svg viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg>
+            </div>
+
+            <a href="../PerfilInstrutor/perfilInstrutor.html"> Perfil do Instrutor </a>
+            <a href="../Competencia/competencia.html"> Matrizes de competência </a>
+
+            <a href="../FIG/fig.html"> FIG </a>
+            <a href="../PosGraduacao/posGraduacao.html"> Pós-Graduação </a>
+        </main>
+        <section class="closed">
+            <p></p>
+            <ul class="cursos">
+                <li> <a href="https://www3.tjrj.jus.br/segweb/faces/login.jsp?SIGLASISTEMA=ESAJ_INTERNET" target="_blank"> Inscrições e consultas online </a> </li>
+                <li> <a href="http://www4.tjrj.jus.br/ESAJInterface/ProgramacaoDeCurso.aspx"> Programação de Cursos </a> </li>
+                <li> <a href="../CursosRegulares/cursosRegulares.html"> Cursos Regulares / Conteúdo Programático </a> </li>
+                <li> <a href="../CursosDistancia/cursosDistancia.html"> Cursos a Distância </a> </li>
+            </ul>
+            <ul class="pesquisas">
+                <li> <a href="../PesquisaOpiniao/pesquisaOpiniao.html"> Pesquisa de Opinião </a> </li>
+                <li> <a href="#"> Pesquisa de Satisfação </a> </li>
+            </ul>
+        </section>
+        <div onclick="toggleMenu()">
+            <h1> Escola de Administração Judiciária </h1>
+        </div>
+    </div>
+
+    <header>
+        <div>
+            <a href="../../index.html">
+                <img width="45" height="57" alt="Logo da ESAJ" src="../../assets/media/logo_white.webp"/>
+            </a>
+            <div id="menuAccess">
+                <svg viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            </div>
+        </div>
+
+        <div>
+            <a href="#contact"> Contato </a>
+            <a href="mailto:esaj.faleconosco@tjrj.jus.br"> Fale conosco </a>
+
+            <div class="divider"></div>
+
+            <div class="socialmedia">
+                <svg onclick="NavigateToScreen('https://www.instagram.com/esajoficialtjrj/')" viewBox="0 0 512 512"><path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"/><path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"/></svg>
+                <svg onclick="NavigateToScreen('https://web.facebook.com/esajoficialtjrj?_rdc=1&_rdr')" viewBox="0 0 512 512"><path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd"/></svg>
+                <svg onclick="NavigateToScreen('https://www.youtube.com/channel/UCy9ggCv5z9kI-25Sqj6y1Dw')" viewBox="0 0 512 512"><path d="M508.64 148.79c0-45-33.1-81.2-74-81.2C379.24 65 322.74 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149 1 184.59-.06 220.19 0 255.79q-.15 53.4 3.4 106.9c0 45 33.1 81.5 73.9 81.5 58.2 2.7 117.9 3.9 178.6 3.8q91.2.3 178.6-3.8c40.9 0 74-36.5 74-81.5 2.4-35.7 3.5-71.3 3.4-107q.34-53.4-3.26-106.9zM207 353.89v-196.5l145 98.2z"/></svg>
+            </div>
+        </div>
+    </header>
+
+    <div id="banner">
+        <h2> ESCOLA DE ADMINISTRAÇÃO JUDICIÁRIA </h2>
+        <h1> Pesquisa de Satisfação </h1>
+    </div>
+
+    <div class="intro">
+        <p> PROMOVE AÇÕES DE CAPACITAÇÃO PARA FORMAÇÃO E APERFEIÇOAMENTO DE SERVIDORES E AUXILIARES DA JUSTIÇA. </p>
+    </div>
+
+    <section>
+        <div>
+            <a data-type="pesquisa" target="_blank" href="../../assets/pesquisaDeSatisfacao/PSU2022.pdf">
+                <h1> Ver pesquisa de satisfação </h1>
+                <div>
+                    <svg viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M268 112l144 144-144 144M392 256H100"/></svg>
+                </div>
+            </a>
+            <a data-type="resposta" target="_blank" href="../../assets/pesquisaDeSatisfacao/Respostas-PSU2022.pdf">
+                <h1> Respostas da pesquisa de satisfação </h1>
+                <div>
+                    <svg viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M268 112l144 144-144 144M392 256H100"/></svg>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+    <footer id="contact">
+            <img width="90" height="114" alt="Logo da ESAJ" src="../../assets/media/logo_white.webp"/>
+
+            <div>
+                <div>
+                    <svg viewBox="0 0 512 512"><path d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0025.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="256" cy="192" r="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    <p> Rua Dom Manuel, 29 - 4º e 5º andar - Centro, Rio de Janeiro </p>
+                </div>
+                <div>
+                    <svg viewBox="0 0 512 512"><path d="M451 374c-15.88-16-54.34-39.35-73-48.76-24.3-12.24-26.3-13.24-45.4.95-12.74 9.47-21.21 17.93-36.12 14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48 5.41-23.23 14.79-36c13.22-18 12.22-21 .92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9 44 119.9 47 108.83 51.6A160.15 160.15 0 0083 65.37C67 76 58.12 84.83 51.91 98.1s-9 44.38 23.07 102.64 54.57 88.05 101.14 134.49S258.5 406.64 310.85 436c64.76 36.27 89.6 29.2 102.91 23s22.18-15 32.83-31a159.09 159.09 0 0013.8-25.8C465 391.17 468 391.17 451 374z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                    <p> (21) 3133-2103 </p>
+                </div>
+                <div>
+                    <svg viewBox="0 0 512 512"><rect x="48" y="96" width="416" height="320" rx="40" ry="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M112 160l144 112 144-112"/></svg>
+                    <p> esaj@tjrj.jus.br </p>
+                </div>
+                <div>
+                    <svg viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
+                    <p> @esajoficialtjrj </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="goToTop" class="hidden">
+        <svg viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36" d="M112 244l144-144 144 144M256 120v292"/></svg>
+    </div>
+
+    <script src="../../globalScript.js"></script>
+</body>
+</html>

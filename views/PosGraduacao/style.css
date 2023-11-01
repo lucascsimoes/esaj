@@ -1,0 +1,107 @@
+body > section {
+    background-color: #111217;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+body > section > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+    background-color: #18191e;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+body > section > header > h1 {
+    color: white;
+    font-weight: 600;
+}
+
+body > section > header > h1 span {
+    font-style: italic;
+    opacity: .6;
+    font-weight: 300;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+body > section > header .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+body > section > header .row > * {
+    flex-grow: 1;
+}
+
+body > section > main {
+    padding: 30px 20px;
+    color: white;
+}
+
+body > section > main > div {
+    display: flex;
+    align-items: center;
+    padding: 3px 20px;
+}
+
+body > section > main > div:hover {
+    background-color: #18191f;
+    border-radius: 10px;
+}
+
+body > section > main span {
+    min-width: 300px;
+    opacity: .6;
+    font-weight: 300;
+}
+
+.regulamentacoes {
+    padding: 50px;
+}
+
+.regulamentacoes .row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.regulamentacoes .row > * {
+    flex-grow: 1;
+}
+
+@media (max-width: 700px) {
+    body > section > main > div {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+
+    body > section > main,
+    body > section > main > div {
+        padding-inline: 0;
+    }
+
+    .regulamentacoes {
+        padding-inline: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    body > section {
+        margin-inline: 0;
+        border-radius: 0;
+    }
+
+    .regulamentacoes {
+        padding-inline: 20px;
+    }
+}

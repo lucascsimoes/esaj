@@ -1,0 +1,44 @@
+body > section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 80px;
+}
+
+body > section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: white;
+}
+
+body > section > div header {
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #272727;
+}
+
+body > section > div > p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+    body > section {
+        padding-inline: 20px;
+    }
+}

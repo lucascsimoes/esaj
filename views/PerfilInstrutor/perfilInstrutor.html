@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ESAJ - Escola de Administração Judiciária - Perfil do Instrutor">
+
+    <link rel="icon" href="../../assets/media/logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="../../styles/banner.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/sidenav.css">
+    <link rel="stylesheet" href="../../styles/globalStyle.css">
+
+    <title> ESAJ - Escola de Administração Judiciária </title>
+</head>
+<body>
+
+    <div id="menu" class="hidden">
+        <aside>
+            <a href="../../index.html">
+                <img width="45" height="57" alt="Logo da ESAJ" src="../../assets/media/logo_white.webp"/>
+            </a>
+            <div class="closeMenu" onclick="toggleMenu()">
+                <svg viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" d="M368 368L144 144M368 144L144 368"/></svg>
+            </div>
+        </aside>
+        <main>
+            <p> ESAJ </p>
+            <a href="../../index.html"> Início </a>
+            <a href="../Apresentacao/apresentacao.html"> Apresentação </a>
+            <a href="../Regulamentacoes/regulamentacoes.html"> Regulamentações </a>
+            <a href="../Convenios/convenios.html"> Convênios </a>
+            <a href="../Eventos/eventos.html"> Eventos </a>
+
+            <div onclick="toggleItem('cursos')"> 
+                <p> Cursos </p>  
+                <svg viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg>
+            </div>
+
+            <div onclick="toggleItem('pesquisas')"> 
+                <p> Pesquisas de Reação </p>
+                <svg viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg>
+            </div>
+
+            <a href="#"> Perfil do Instrutor </a>
+            <a href="../Competencia/competencia.html"> Matrizes de competência </a>
+
+            <a href="../FIG/fig.html"> FIG </a>
+            <a href="../PosGraduacao/posGraduacao.html"> Pós-Graduação </a>
+        </main>
+        <section class="closed">
+            <p></p>
+            <ul class="cursos">
+                <li> <a href="https://www3.tjrj.jus.br/segweb/faces/login.jsp?SIGLASISTEMA=ESAJ_INTERNET" target="_blank"> Inscrições e consultas online </a> </li>
+                <li> <a href="http://www4.tjrj.jus.br/ESAJInterface/ProgramacaoDeCurso.aspx"> Programação de Cursos </a> </li>
+                <li> <a href="../CursosRegulares/cursosRegulares.html"> Cursos Regulares / Conteúdo Programático </a> </li>
+                <li> <a href="../CursosDistancia/cursosDistancia.html"> Cursos a Distância </a> </li>
+            </ul>
+            <ul class="pesquisas">
+                <li> <a href="../PesquisaOpiniao/pesquisaOpiniao.html"> Pesquisa de Opinião </a> </li>
+                <li> <a href="../PesquisaSatisfacao/pesquisaSatisfacao.html"> Pesquisa de Satisfação </a> </li>
+            </ul>
+        </section>
+        <div onclick="toggleMenu()">
+            <h1> Escola de Administração Judiciária </h1>
+        </div>
+    </div>
+
+    <header>
+        <div>
+            <a href="../../index.html">
+                <img width="45" height="57" alt="Logo da ESAJ" src="../../assets/media/logo_white.webp"/>
+            </a>
+            <div id="menuAccess">
+                <svg viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            </div>
+        </div>
+
+        <div>
+            <a href="#contact"> Contato </a>
+            <a href="mailto:esaj.faleconosco@tjrj.jus.br"> Fale conosco </a>
+
+            <div class="divider"></div>
+
+            <div class="socialmedia">
+                <svg onclick="NavigateToScreen('https://www.instagram.com/esajoficialtjrj/')" viewBox="0 0 512 512"><path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"/><path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"/></svg>
+                <svg onclick="NavigateToScreen('https://web.facebook.com/esajoficialtjrj?_rdc=1&_rdr')" viewBox="0 0 512 512"><path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd"/></svg>
+                <svg onclick="NavigateToScreen('https://www.youtube.com/channel/UCy9ggCv5z9kI-25Sqj6y1Dw')" viewBox="0 0 512 512"><path d="M508.64 148.79c0-45-33.1-81.2-74-81.2C379.24 65 322.74 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149 1 184.59-.06 220.19 0 255.79q-.15 53.4 3.4 106.9c0 45 33.1 81.5 73.9 81.5 58.2 2.7 117.9 3.9 178.6 3.8q91.2.3 178.6-3.8c40.9 0 74-36.5 74-81.5 2.4-35.7 3.5-71.3 3.4-107q.34-53.4-3.26-106.9zM207 353.89v-196.5l145 98.2z"/></svg>
+            </div>
+        </div>
+    </header>
+
+    <div id="banner">
+        <h2> ESCOLA DE ADMINISTRAÇÃO JUDICIÁRIA </h2>
+        <h1> Perfil do Instrutor </h1>
+    </div>
+
+    <div class="intro">
+        <p> PROMOVE AÇÕES DE CAPACITAÇÃO PARA FORMAÇÃO E APERFEIÇOAMENTO DE SERVIDORES E AUXILIARES DA JUSTIÇA. </p>
+    </div>
+
+    <section>
+        <h1> Perfil do Instrutor de <span>aulas ao vivo</span> </h1>
+        <div>
+            <a href="http://www.tjrj.jus.br/documents/10136/0/perfil-do-instrutor-avacp.pdf/ab76d73b-8dbc-b624-a454-d91b648bc5f1?t=1632763811675" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - AÇÃO CIVIL PÚBLICA NA LEI N. 7.347/85.</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVACE.pdf" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Acessibilidade e Inclusão - Formação de Instrutores</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-instrutor-AVADT.pdf" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Administração do Tempo</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVAPA.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - ALIENAÇÃO PARENTAL: O OLHAR INTERDISCIPLINAR DO SERVIÇO SOCIAL E DA PSICOLOGIA</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-instrutor-AVLCA.pdf" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Aspectos Gerais da Nova Legislação Sobre Licitações e Contratos Administrativos</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avoja.pdf/0d6f1bf7-938b-49b8-408f-50eda548bff3?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao vivo - Atualização para Oficiais de Justiça</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avabi.pdf/cb101e67-61ec-6024-ad7f-13f7f61c56e9?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Avaliação de Bens</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-AVCAU.pdf" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Cautelares em Processo Penal - das Medidas Patrimoniais às Prisões Provisórias</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVCNO.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - CÓDIGO DE NORMAS PARA OFICIAIS DE JUSTIÇA AVALIADORES</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVCOL.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - COLETA SELETIVA - LEGISLAÇÃO, ASPECTOS RELEVANTES E IMPLEMENTAÇÃO</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-instrutor-AVEXT.pdf" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Consulta aos Bancos de Informações</p></a>
+            <a href="https://portaltj.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avcon.pdf/77edba7a-96a3-0905-18a4-0b2641e6d3b3?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao vivo - Contratos de Saúde: Aspectos Polêmicos</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-instrutor-AVCRA.pdf" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Crase</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVSEX.pdf" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Crimes Sexuais - Aspectos Práticos e Controvertidos</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avcid.pdf/aa651a98-d58b-992e-c5ae-84fa8a1de46f?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Cidadania das pessoas com deficiência aspectos legais e sociais</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-instrutor-avesq.pdf/dcc9f0c6-4db4-492e-f58e-42562e1d5a83?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Direito ao Esquecimento</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-avdiv.pdf/a142a81e-3f4b-57d1-3cf5-29af320ff833?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Diversidade Sexual e de Gênero no Ambiente de Trabalho</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avcri.pdf/109bddc0-8266-cb2c-c70a-9760bdd9077d?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Direito da Criança e do Adolescente</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVDC.pdf" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Direito da Criança e do Adolescente - Infracional</p></a>
+            <a href="https://portaltj.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avimo.pdf/2d7563ad-bf66-2d07-bbec-54828b66120f?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Direito Imobiliário</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVERG.pdf" target="_blank" class="btnDefault invert"><p>Aula Ao Vivo - Ergonomia e Qualidade de Vida no Trabalho</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVECR.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - ESCRITA CRIATIVA</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avexa.pdf/4b749ab0-81ea-96e1-d50c-980787d28048?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao Vivo -Excel Avançado</p></a> 
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avexe.pdf/72db9e75-db13-0b06-bf8e-730082f4604e?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Execução Fiscal e Tributos em Espécie</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVJUD.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - EXPEDIÇÃO CARTORÁRIA DE ORDENS JUDICIAIS</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-instrutor-AVFER.pdf" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Ferramentas Digitais Aplicadas ao Processamento Eletrônico</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avfim.pdf/b2ff668f-0ae2-129e-2b93-f5823115e61b?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Formação de Instrutores em Mediação e Conciliação Judiciais</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avcmc.pdf/100cd078-9e5f-cb24-4e68-7df781b91453?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Formação de Mediador Comunitário - AVCMC</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-instrutor-AVFM.pdf" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Formação de Mediadores e Conciliadores Judiciais</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avdig.pdf/615cfdad-3161-9e4c-ba8f-def863bf6b4c?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Herança Digital</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVIMP.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - INOVAÇÕES DA LEI MARIA DA PENHA</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVCCM.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - INSTRUÇÕES BÁSICAS E BOAS PRÁTICAS NA GESTÃO DAS CCM/NAROJAS</p></a>
+            <a href="https://portaltj.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avipc.pdf/2b61985a-9103-223a-026c-e66a06859639?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao Vivo -Introdução ao Processo Civil</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVPAI.pdf" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Inventário e Partilha</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVINS.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - INSTITUTOS FUNDAMENTAIS DO PROCESSO PENAL</p></a>
+            <a href="https://portaltj.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avnbr.pdf/1adea1e0-670e-825a-8e20-3f605f4b2c7d?version=1.0" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - INTERPRETAÇÃO DA NBR ISO 9001:2015</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVFAZ.pdf" target="_blank" class="btnDefault invert"><p>Aula ao vivo - Juizados Especiais da Fazenda Pública</p></a>
+            <a href="https://portaltj.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avlmp.pdf/c9ce3c07-0749-755a-6015-926911d3cfa0?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Lei Maria da Penha - Aspectos Práticos</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avlgp.pdf/31107283-1d48-143b-c9a3-36d7b3d8ab6c?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Lei Geral de Proteção De Dados Pessoais (LGPD) - Lei nº 13.709</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVTRI.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - NOÇÕES DE DIREITO TRIBUTÁRIO CONSTITUCIONAL</p></a>
+            <a href="https://portaltj.tjrj.jus.br/documents/10136/6348143/AVGEQ.pdf/c10092ca-5ddb-0828-98a5-bdf6cb0187e6?version=1.0" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - NOÇÕES DE GESTÃO DA QUALIDADE</p></a>
+            <a href="https://portaltj.tjrj.jus.br/documents/10136/6348143/Perfil-AVNCO.pdf/bb133cdc-c5b5-8522-548f-31e8d88b52df?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao vivo - Noções de Controle Interno</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVLIC.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - NOVA LEI DE LICITAÇÕES E CONTRATOS ADMINISTRATIVOS</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avpro.pdf/af153717-b44a-0937-48c9-20c597aebeb9?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - O Estudo da Posse e da Propriedade à luz da Função Social</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-instrutor-AVOJP.pdf" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - O Oficial de Justiça e o Poder Judiciário Digital</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-instrutor-AVOAT.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - ORGANIZANDO O AMBIENTE DE TRABALHO</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVOUT.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - OUTLOOK WEB</p></a>
+            <a href="https://portaltj.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avpac.pdf/b896f868-785d-037d-2731-78a3804e7fc1?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Pacote Anticrime</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avpjf.pdf/fc65271f-ee93-6439-b4b7-80b2304e96bd?version=1.1" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Pesquisa Jurídica Informatizada</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVPCP.pdf" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Princípios Processuais no Código de Processo Civil</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-instrutor-AVPMA.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - PRISÃO, MEDIDAS ALTERNATIVAS À PRISÃO E LIBERDADE: TEORIA E PRÁTICA</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVEFC.pdf" target="_blank" class="btnDefault invert"><p>Aula ao vivo - Processamento judicial eletrônico - Sistema PJE - Equipes técnicas - Varas Criminais e Família</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVCGA.pdf" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Processamento Judicial Eletrônico - Sistema PJE Gabinete - Varas Criminais</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVPCR.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - PROCESSAMENTO JUDICIAL ELETRÔNICO - SISTEMA PJE CARTÓRIO - VARAS CRIMINAIS</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVCIV.pdf" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Processamento Judicial Eletrônico - Sistema PJE - Varas Cíveis - Cartório</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-instrutor-AVPJG.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - PROCESSO JUDICIAL ELETRÔNICO - SISTEMA PJE PARA GABINETE - VARAS CÍVEIS</p></a>
+            <!-- <a href="../../assets/perfilDoInstrutor/Perfil-do-instrutor-AVJUV.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - PROCESSAMENTO JUDICIAL ELETRÔNICO - SISTEMA PJE - VARAS DA INFÂNCIA E JUVENTUDE - CARTÓRIO</p></a> -->
+            <a href="http://www.tjrj.jus.br/documents/10136/0/perfil-avpoj-rev-01.pdf/ba3198d9-f18f-4668-b5e9-19e91bcb0ff5?t=1633630513502" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Processo Judicial Eletrônico - Sistema PJe para Oficiais de Justiça - Juizados Especiais Cíveis</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVPCA.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - PROCESSO JUDICIAL ELETRÔNICO - SISTEMA PJE PARA CARTÓRIO - JEC</p></a>
+            <!-- <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVCIO.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - PROCESSO JUDICIAL ELETRÔNICO - SISTEMA PJE - VARAS CÍVEIS - OFICIAL DE JUSTIÇA</p></a> -->
+            <a href="https://portaltj.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avpex.pdf/1a80500d-95d6-bf90-739f-6f8a490a7aa6?version=1.0&amp;t=1620408944413&amp;download=true" target="_blank" class="btnDefault invert"><p>Aula ao vivo - Processo de Execução: Princípios e Defesa do Executado</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/0/perfil-do-instrutor-avpga-.pdf/93c1ab48-052b-ca6c-e3ad-26ec681f07d1?t=1633545175664" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Processo Judicial Eletrônico - Sistema PJE para Gabinete - Juizados Especiais Cíveis</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/0/perfil-avpoj-rev.01.pdf/a0490552-e372-b9c2-8239-7f40c36479c1?t=1633545114282" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Processo Judicial Eletrônico - Sistema PJe para Oficiais de Justiça - Juizados Especiais Cíveis</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVNAD.pdf" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Processo Judicial Eletrônico - Sistema PJE para NADAC - Juizados Especiais Cíveis</p></a>
+            <a href="https://portaltj.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avpec.pdf/10f61d09-730d-048d-4b04-169a00681343?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Procedimentos Especiais no CPC</p></a>
+            <a href="https://portaltj.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avpcd.pdf/bb013d51-4007-b430-9e38-ab87db816a55?version=1.0" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - PROCEDIMENTOS DE EXECUÇÃO NO CPC</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-instrutor-AVPTS.pdf" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Produção Textual para Servidores</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-instrutor-AVPTI.pdf" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Produção Textual para Instrutores</p></a>
+            <a href="https://portaltj.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avpcc.pdf/79400a23-e848-a847-5adc-32c79b04300c?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Procedimento Comum no CPC</p></a>
+            <a href="https://portaltj.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avpfp.pdf/09da70cb-83c4-ebd1-b970-aa554cf5cdf7?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Processamento em Vara de Fazenda Pública</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-avpjo.pdf/9e533d10-205d-3ddd-d5a2-d48a34e592b3?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Processamento Eletrônico no Plantão Judiciário</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVVOS.pdf" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Processamento em Vara de Órfãos e Sucessões</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-avrec.pdf/b361f9a7-4d61-e914-f753-ca640cda456f?version=1.0" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Recursos no Processo Civil</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVRCO.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - RESPONSABILIDADE CIVIL OBJETIVA</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVQAP.pdf" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Qualidade no Atendimento ao Público</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVSAU.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - SAÚDE MENTAL E QUALIDADE DE VIDA NO TRABALHO</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVTPP.pdf" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Técnicas para Preenchimento e Instrução de Ofício Precatório</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVPCO.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - TEORIA E PRÁTICA NO CUMPRIMENTO DAS ORDENS JUDICIAIS</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVTSV.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - TÉCNICAS DE SENTENÇA CRIMINAL</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVATV.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - TÉCNICAS DE ENTREVISTA INVESTIGATIVA COM VÍTIMAS E TESTEMUNHAS</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-AVTGC.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - TÓPICOS GERAIS - CUSTAS PROCESSUAIS</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-instrutor-AVVIR.pdf" target="_blank" class="btnDefault invert"><p>AULA AO VIVO - USO DA VÍRGULA EM TEXTOS JURÍDICOS</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/0/perfil-do-instrutor-secin-avwor-.pdf/69eda663-9acc-b948-b22b-729ca7df8ca8?t=1634659724823" target="_blank" class="btnDefault invert"><p>Aula ao Vivo - Word online</p></a>
+        </div>
+
+        <h1> Perfil do Instrutor de <span>aulas virtuais</span> </h1>
+        <div>
+            <a href="https://portaltj.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-aula-virtual-excel-basico-.pdf/6e5322ee-93ea-8d53-45f2-692e5e750434?version=1.0" target="_blank" class="btnDefault invert"><p>Aula Virtual - Excel Básico</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/0/perfil-instruto-avpev.pdf/c8536f89-ab8f-7697-8bd3-14d959e99e70?t=1590790309581" target="_blank" class="btnDefault invert"><p>Aula Virtual - Processamento Eletrônico em Vara Criminal</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-avels.pdf/ba51e1c7-7534-b6cf-8d8e-4dc8a5f4d934?t=1592593961751" target="_blank" class="btnDefault invert"><p>Aula Virtual - Processamento Eletrônico para Secretários</p></a>
+            <a href="https://portaltj.tjrj.jus.br/documents/10136/6348143/perfil-avele.pdf/d1075c40-8928-bffe-7522-c4bcd83a4b33?t=1593629479256" target="_blank" class="btnDefault invert"><p>Aula Virtual - Processamento Eletrônico</p></a>
+        </div>
+
+        <h1> Perfil do Instrutor de <span>ensinos a distância</span> </h1>
+        <div>
+            <a href="https://portaltj.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-cpciv.pdf/efe1d0d0-d8be-fc35-a2ff-3af3760ee362?version=1.0" target="_blank" class="btnDefault invert"><p>EAD - Custas Processuais: Principais Dúvidas - Vara Cível</p></a>
+            <a href="https://portaltj.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-cpcri.pdf/9b9ea4c0-2fda-13e7-dfd8-0ba73dbdb14d?version=1.0" target="_blank" class="btnDefault invert"><p>EAD - Custas Processuais: Principais Dúvidas - Vara Criminal e Juizado da Violência Doméstica e Familiar Contra a Mulher</p></a>
+            <a href="https://portaltj.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-cpemp.pdf/93c0ffd2-be15-10f2-e5ee-6481532bf90a?version=1.0" target="_blank" class="btnDefault invert"><p>EAD - Custas Processuais: Principais Dúvidas - Vara Empresarial</p></a>
+            <a href="https://portaltj.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-cporf.pdf/355802e3-98df-8d8c-066e-7d273570530f?version=1.0" target="_blank" class="btnDefault invert"><p>EAD - Custas Processuais:Principais Dúvidas - Vara de Órfãos e Sucessões</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-cpjec.pdf/35e53391-8a72-171b-f1ae-09b57ad0846c?version=1.0" target="_blank" class="btnDefault invert"><p>EAD - Custas Processuais: Principais Dúvidas - Juizados Especiais</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/area-adm-riadm.pdf/07f5642c-af54-622e-66f0-2aa46c5d4772?version=1.3" target="_blank" class="btnDefault invert"><p>EAD - Gestão de Riscos - Área Administrativa</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/area-jurisdicional-rijus.pdf/7eee5b14-1107-fae1-8bbc-240308b1c6d3?version=1.2" target="_blank" class="btnDefault invert"><p>EAD - Gestão de Riscos - Área Jurisdicional</p></a>
+            <a href="https://portaltj.tjrj.jus.br/documents/10136/6348143/atendimento-de-excelencia.pdf/3026f52e-ea80-4477-0687-1c851d8569f4?version=1.0" target="_blank" class="btnDefault invert"><p>EAD - Atendimento de Excelência</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-cpfaz.pdf/baecaf99-c371-33e7-bc9c-50a1cab5fa7d?version=1.0" target="_blank" class="btnDefault invert"><p>EAD - Custas Processuais: Principais Dúvidas - Vara de Fazenda Pública e Dívida Ativa</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-cpfam.pdf/a4a885c9-add2-4047-f473-16bd0de2f478?version=1.0" target="_blank" class="btnDefault invert"><p>EAD - Custas Processuais: Principais Dúvidas - Vara de Família</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-Instrutor-LGPD.pdf" target="_blank" class="btnDefault invert"><p>EAD - Lei Geral de Proteção de Dados Pessoais: 13.709/18</p></a>
+            <a href="../../assets/perfilDoInstrutor/Perfil-do-instrutor-SEGIN.pdf" target="_blank" class="btnDefault invert"><p>EAD - Segurança da Informação</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/ead-tecnicas-sentenca-civel.pdf" target="_blank" class="btnDefault invert"><p>EAD - Técnicas de Sentença Cível</p></a>
+        </div>
+
+        <h1> Perfil do Instrutor de <span>gestores</span> </h1>
+        <div>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-gjgoc-rev.01.pdf/93a2421b-2c8b-439d-1f2a-1898ae12479f?version=1.0" target="_blank" class="btnDefault invert"><p>Gestores - Governança Corporativa e Pública - Área Judiciária</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-gagoc-rev.01.pdf/b20bbe72-0dd2-e70f-d5cc-9dee75e798be?version=1.0" target="_blank" class="btnDefault invert"><p>Gestores - Governança Corporativa e Pública - Área Administrativa</p></a>
+        </div>
+
+        <h1> Perfil do Instrutor de <span>videoaulas</span> </h1>
+        <div>
+            <a href="https://portaltj.tjrj.jus.br/documents/10136/6348143/videoaula-nocoes-acess.pdf" target="_blank" class="btnDefault invert"><p>Videoaula Noções de Acessibilidade</p></a>
+        </div>
+
+        <h1> Perfil do Instrutor de <span>workshops</span> </h1>
+        <div>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-wvamt.pdf/f6341dcf-bb8a-6a66-8ae2-262403a94f58?version=1.0" target="_blank" class="btnDefault invert"><p>Workshop ao Vivo - Audiências no Microsoft Teams</p></a>
+            <a href="http://www.tjrj.jus.br/documents/10136/6348143/perfil-do-instrutor-wvsjt.pdf/0312f90c-9b74-db01-7d7b-ba41287fa088?version=1.0" target="_blank" class="btnDefault invert"><p>Workshop ao vivo - Sessão de julgamento usando o Microsoft Teams</p></a>
+        </div>
+        
+    </section>
+    
+    <footer id="contact">
+            <img width="90" height="114" alt="Logo da ESAJ" src="../../assets/media/logo_white.webp"/>
+
+            <div>
+                <div>
+                    <svg viewBox="0 0 512 512"><path d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0025.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="256" cy="192" r="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    <p> Rua Dom Manuel, 29 - 4º e 5º andar - Centro, Rio de Janeiro </p>
+                </div>
+                <div>
+                    <svg viewBox="0 0 512 512"><path d="M451 374c-15.88-16-54.34-39.35-73-48.76-24.3-12.24-26.3-13.24-45.4.95-12.74 9.47-21.21 17.93-36.12 14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48 5.41-23.23 14.79-36c13.22-18 12.22-21 .92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9 44 119.9 47 108.83 51.6A160.15 160.15 0 0083 65.37C67 76 58.12 84.83 51.91 98.1s-9 44.38 23.07 102.64 54.57 88.05 101.14 134.49S258.5 406.64 310.85 436c64.76 36.27 89.6 29.2 102.91 23s22.18-15 32.83-31a159.09 159.09 0 0013.8-25.8C465 391.17 468 391.17 451 374z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                    <p> (21) 3133-2103 </p>
+                </div>
+                <div>
+                    <svg viewBox="0 0 512 512"><rect x="48" y="96" width="416" height="320" rx="40" ry="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M112 160l144 112 144-112"/></svg>
+                    <p> esaj@tjrj.jus.br </p>
+                </div>
+                <div>
+                    <svg viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
+                    <p> @esajoficialtjrj </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="goToTop" class="hidden">
+        <svg viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36" d="M112 244l144-144 144 144M256 120v292"/></svg>
+    </div>
+
+    <script src="../../globalScript.js"></script>
+</body>
+</html>

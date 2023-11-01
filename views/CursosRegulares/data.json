@@ -1,0 +1,66 @@
+[
+    {
+        "codigo": "APPEC",
+        "curso": "AULA PRESENCIAL - PROCEDIMENTOS ESPECIAIS NO CPC",
+        "link": "http://www1.tjrj.jus.br/gedcacheweb/default.aspx?GEDID=00038BD4F4712FF1E93BBCE58AE5EED4F32B76C40A505E45&LOGINSEG=1&LOGINSO=1&SIGLASIST=ESAJ_INTERNET&CODORG=407&HOST=ESAJ&UZIP=0&INLINE=1&EXIBEERROS=0",
+        "competencia": "DIREITO PROCESSUAL CIVIL",
+        "publico": "TODOS OS SERVIDORES DO PJERJ",
+        "ch": "13h"
+    },
+    {
+        "codigo": "ACRAS",
+        "curso": "AÇÃO DE CAPACITAÇÃO RÁPIDA - PRESENCIAL - ASSESSORIA DE DESEMBARGADOR: NOÇÕES BÁSICAS",
+        "link": "http://www1.tjrj.jus.br/gedcacheweb/default.aspx?GEDID=&LOGINSEG=1&LOGINSO=1&SIGLASIST=ESAJ_INTERNET&CODORG=407&HOST=ESAJ&UZIP=0&INLINE=1&EXIBEERROS=0",
+        "competencia": "ASSESSORAMENTO",
+        "publico": "Secretários de Juízes indicados",
+        "ch": "5h"
+    },
+    {
+        "codigo": "ACRDP",
+        "curso": "AÇÃO DE CAPACITAÇÃO RÁPIDA - PRESENCIAL - PROGRAMA DE PROTEÇÃO FEMININA - DEFESA PESSOAL",
+        "link": "http://www1.tjrj.jus.br/gedcacheweb/default.aspx?GEDID=&amp;LOGINSEG=1&amp;LOGINSO=1&amp;SIGLASIST=ESAJ_INTERNET&amp;CODORG=407&amp;HOST=ESAJ&amp;UZIP=0&amp;INLINE=1&amp;EXIBEERROS=0",
+        "competencia": "SEGURANÇA INSTITUCIONAL",
+        "publico": "TODAS AS SERVIDORAS DO TJRJ",
+        "ch": "5h"
+    },
+    {
+        "codigo": "APPAC",
+        "curso": "AULA PRESENCIAL -  PACOTE ANTICRIME",
+        "link": "http://www1.tjrj.jus.br/gedcacheweb/default.aspx?GEDID=00030A58C5ECD38F6D17866494A37270D367C9C4095D2017&amp;LOGINSEG=1&amp;LOGINSO=1&amp;SIGLASIST=ESAJ_INTERNET&amp;CODORG=407&amp;HOST=ESAJ&amp;UZIP=0&amp;INLINE=1&amp;EXIBEERROS=0",
+        "competencia": "DIREITO PENAL",
+        "publico": "EXCLUSIVAMENTE, Vara Criminal, JECRIM, Câmara Criminal, VUNI, Secretaria das Turmas Recursais, VEP, Tribunal de Juri, 2ª Vice-Presidência, Auditoria Militar, Juizados da Violência Doméstica e Familiar contra a Mulher, Vara da Infância e Juventude-Menores infratores., Conselho da Magistratura, Órgão Especial e Oficial de Justiça Avaliador, DGCOM, Plantão Judidiário, DGJUR, DGLOG, DGEP e  3ª Vice-Presidência. DGTEC. GBESP, DEACO, DEAGE, DEPRO, DEAUD, DEPEP, Auditor Interno, DGSEI, CEPES e CPMA.",
+        "ch": "15h"
+    },
+    {
+        "codigo": "APACP",
+        "curso": "AULA PRESENCIAL - AÇÃO CIVIL PÚBLICA NA LEI N. 7.347/85",
+        "link": "http://www1.tjrj.jus.br/gedcacheweb/default.aspx?GEDID=000322770CECD0C91063DAAB4863DD0B68DDFFC40B243C35&amp;LOGINSEG=1&amp;LOGINSO=1&amp;SIGLASIST=ESAJ_INTERNET&amp;CODORG=407&amp;HOST=ESAJ&amp;UZIP=0&amp;INLINE=1&amp;EXIBEERROS=0",
+        "competencia": "LEGISLAÇÃO APLICADA À AREA",
+        "publico": "Todos os servidores do TJERJ",
+        "ch": "13h"
+    },
+    {
+        "codigo": "APACE",
+        "curso": "AULA PRESENCIAL - ACESSIBILIDADE E INCLUSÃO - FORMAÇÃO DE INSTRUTORES",
+        "link": "http://www1.tjrj.jus.br/gedcacheweb/default.aspx?GEDID=000359EEB32EBDC09E96E635F6FCFC3B3A0C3BC40B0F360D&amp;LOGINSEG=1&amp;LOGINSO=1&amp;SIGLASIST=ESAJ_INTERNET&amp;CODORG=407&amp;HOST=ESAJ&amp;UZIP=0&amp;INLINE=1&amp;EXIBEERROS=0",
+        "competencia": "SUSTENTABILIDADE",
+        "publico": "Instrutores e funcionários da ESAJ",
+        "ch": "5h"
+    },
+    {
+        "codigo": "APOJA",
+        "curso": "AULA PRESENCIAL - ATUALIZAÇÃO PARA OFICIAIS DE JUSTIÇA",
+        "link": "http://www1.tjrj.jus.br/gedcacheweb/default.aspx?GEDID=0003DA5D604CA79167C39F53DB11FD08B58A7DC40A125524&amp;LOGINSEG=1&amp;LOGINSO=1&amp;SIGLASIST=ESAJ_INTERNET&amp;CODORG=407&amp;HOST=ESAJ&amp;UZIP=0&amp;INLINE=1&amp;EXIBEERROS=0",
+        "competencia": "LEGISLAÇÃO APLICADA À AREA",
+        "publico": "exclusivamente, oficiais de justiça avaliadores",
+        "ch": "13h"
+    },
+    {
+        "codigo": "AVPAI",
+        "curso": "AULA AO VIVO - INVENTÁRIO E PARTILHA",
+        "link": "http://www1.tjrj.jus.br/gedcacheweb/default.aspx?GEDID=0003AFB9557C4387072D3197E8A98F9EDFA349C40B30515B&amp;LOGINSEG=1&amp;LOGINSO=1&amp;SIGLASIST=ESAJ_INTERNET&amp;CODORG=407&amp;HOST=ESAJ&amp;UZIP=0&amp;INLINE=1&amp;EXIBEERROS=0",
+        "competencia": "LEGISLAÇÃO APLICADA À AREA",
+        "publico": "VOS; VCív; VFaz Pública; VEmp; VFam; VIJI; CEJA; CEJIJ; Vara Única; Dívida Ativa; JEC; Turma Recursal do JEC; Cartório Distribuidor; PROGER; Distribuição; Contador Judicial; Central de Cálculos Judiciais; Inventariante Judicial; Central de Inventariantes Judiciais; Partidor Judicial; Central de Partilhas Judiciais; Tutor e Testamenteiro Judicial; Central de Testamentaria e Tutoria Judicial; Central de Cumprimento de Mandados; Oficial de Justiça Avaliador; Avaliador Judicial; Central de Avaliadores Judiciais; Liquidante Judicial; Central de Liquidantes Judiciais; Depositário Judicial; Central de Depositário Judicial; secretários de juiz; 1ª VP; 3ª VP; Câmara Cível; Órgão Especial; DGJUR;DGTEC; DGPES; EMERJ; DGCON; Ouvidoria; DEAPE(Pres); DEPRE (Pres); GBJAP (Pres); COPAD (Pres) DGADM (CGJ); DGFAJ (CGJ); DGFEX (CGJ); DENUR e NURs; ASCGJ; GBCGJ; COPPD (CGJ); NUJAC (CGJ); DICIN (CGJ).",
+        "ch": "11h"
+    }
+]

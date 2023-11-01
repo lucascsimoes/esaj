@@ -1,0 +1,11 @@
+body > section {
+    padding-block: 80px;
+}
+
+@media (max-width: 700px) {
+    div.data-table tr > * {
+        padding-inline: 10px !important;
+    }
+}
+
+

@@ -1,0 +1,38 @@
+div.data-table {
+    overflow: auto;
+}
+
+div.data-table > table {
+    width: 100%;
+}
+
+div.data-table th {
+    background-color: #201f27;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    height: 50px;
+    font-size: 14px;
+}
+
+div.data-table > tbody > tr {
+    cursor: pointer;
+}
+
+div.data-table tr:hover {
+    background-color: rgb(188, 188, 188) !important;
+}
+
+div.data-table tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+div.data-table tr > * {
+    text-align: left;
+    padding-inline: 60px;
+}
+
+div.data-table tr > td {
+    padding-block: 10px;
+    font-size: 15px;
+}

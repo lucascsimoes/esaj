@@ -1,0 +1,223 @@
+:root {
+    --primary: #5B9BBD;
+    --secondary: #2c576f;
+
+    --darkPrimary: #3f7592;
+    --darkSecondary: #1b3d4e;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-Thin.ttf);
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-ExtraLight.ttf);
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-Light.ttf);
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-Regular.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-Medium.ttf);
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-SemiBold.ttf);
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-Bold.ttf);
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-ExtraBold.ttf);
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-Black.ttf);
+    font-weight: 900;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    background-color: #ebebeb;
+    font-family: 'Poppins', sans-serif;
+    /* overflow-x: hidden; */
+}
+
+body.blockScroll {
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 11px;
+    background-color: rgb(59, 59, 59);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(27, 27, 27);
+    border-radius: 10px;
+}
+
+.btnDefault {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 16px 35px;
+    min-height: 45px;
+    border-radius: 3px;
+    border: 1px solid white;
+    background-color: transparent;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: transparent;
+    user-select: none;
+}
+
+.btnDefault p {
+    position: relative;
+    z-index: 2;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .25s;
+}
+
+.btnDefault::after {
+    content: '';
+    position: absolute;
+    left: -150%;
+    width: 150%;
+    height: 105%;
+    background-color: white;
+    -webkit-clip-path: polygon(0 0, 80% 0, 75% 100%, 0% 100%);
+    clip-path: polygon(0 0, 80% 0, 75% 100%, 0% 100%);
+    z-index: 1;
+    transition: .25s;
+}
+
+.btnDefault:hover p {
+    color: black;
+    transition: color .5s;
+}
+
+.btnDefault:hover::after {
+    left: 0;
+    transition: .5s;
+}
+
+.btnDefault.invert {
+    border: 1px solid var(--secondary);
+}
+
+.btnDefault.invert p {
+    color: var(--secondary);
+}
+
+.btnDefault.invert::after {
+    background-color: var(--secondary);
+}
+
+.btnDefault.invert:hover p {
+    color: white;
+}
+
+.link {
+    padding: 3px 8px;
+    background-color: var(--secondary);
+    color: white;
+    text-decoration: underline;
+    transition: background-color .2s;;
+}
+
+.link:hover {
+    background-color: var(--darkSecondary);
+}
+
+.link.dark {
+    background-color: var(--secondary);
+}
+
+.link.dark:hover {
+    background-color: var(--darkSecondary);
+}
+
+#goToTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed !important;
+    right: 40px;
+    left: auto !important;
+    bottom: 40px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: rgb(60, 60, 60);
+    cursor: pointer;
+    z-index: 4;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity .25s ease-in-out, transform .5s ease-in-out;
+    opacity: .5;
+}
+
+#goToTop:hover {
+    opacity: 1;
+}
+
+#goToTop.hidden {
+    cursor: default;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .25s ease-in-out, transform .5s ease-in-out;
+}
+
+#goToTop svg {
+    min-width: 25px;
+    width: 0;
+    color: white;
+}

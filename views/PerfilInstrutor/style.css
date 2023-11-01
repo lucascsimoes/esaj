@@ -1,0 +1,37 @@
+body > section {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-block: 80px;
+}
+
+body > section > h1 {
+    width: 100%;
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+body > section > h1 > span {
+    font-weight: bold;
+    padding: 8px;
+    background-color: #d5d5d5;
+}
+
+body > section > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px 30px;
+    margin-bottom: 100px;
+}
+
+body > section > div a {
+    max-width: 500px;
+    width: 100%;
+}
+
+.btnDefault {
+    min-height: 60px !important;
+}

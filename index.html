@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ESAJ - Escola de Administração Judiciária - Pesquisa de Opinião">
+
+    <link rel="icon" href="./assets/media/logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./styles/banner.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/sidenav.css">
+    <link rel="stylesheet" href="./styles/globalStyle.css">
+
+    <title> ESAJ - Escola de Administração Judiciária </title>
+</head>
+<body>
+
+    <div id="menu" class="hidden">
+        <aside>
+            <a href="#">
+                <img width="45" height="57" alt="Logo da ESAJ" src="./assets/media/logo_white.webp"/>
+            </a>
+            <div class="closeMenu" onclick="toggleMenu()">
+                <svg viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" d="M368 368L144 144M368 144L144 368"/></svg>
+            </div>
+        </aside>
+        <main>
+            <p> ESAJ </p>
+            <a href="#"> Início </a>
+            <a href="./views/Apresentacao/apresentacao.html"> Apresentação </a>
+            <a href="./views/Regulamentacoes/regulamentacoes.html"> Regulamentações </a>
+            <a href="./views/Convenios/convenios.html"> Convênios </a>
+            <a href="./views/Eventos/eventos.html"> Eventos </a>
+
+            <div onclick="toggleItem('cursos')"> 
+                <p> Cursos </p>  
+                <svg viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg>
+            </div>
+
+            <div onclick="toggleItem('pesquisas')"> 
+                <p> Pesquisas de Reação </p>
+                <svg viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg>
+            </div>
+
+            <a href="./views/PerfilInstrutor/perfilInstrutor.html"> Perfil do Instrutor </a>
+            <a href="./views/Competencia/competencia.html"> Matrizes de competência </a>
+
+            <a href="./views/FIG/fig.html"> FIG </a>
+            <a href="./views/PosGraduacao/posGraduacao.html"> Pós-Graduação </a>
+        </main>
+        <section class="closed">
+            <p></p>
+            <ul class="cursos">
+                <li> <a href="https://www3.tjrj.jus.br/segweb/faces/login.jsp?SIGLASISTEMA=ESAJ_INTERNET" target="_blank"> Inscrições e consultas online </a> </li>
+                <li> <a href="http://www4.tjrj.jus.br/ESAJInterface/ProgramacaoDeCurso.aspx"> Programação de Cursos </a> </li>
+                <li> <a href="./views/CursosRegulares/cursosRegulares.html"> Cursos Regulares / Conteúdo Programático </a> </li>
+                <li> <a href="./views/CursosDistancia/cursosDistancia.html"> Cursos a Distância </a> </li>
+            </ul>
+            <ul class="pesquisas">
+                <li> <a href="./views/PesquisaOpiniao/pesquisaOpiniao.html"> Pesquisa de Opinião </a> </li>
+                <li> <a href="./views/PesquisaSatisfacao/pesquisaSatisfacao.html"> Pesquisa de Satisfação </a> </li>
+            </ul>
+        </section>
+        <div onclick="toggleMenu()">
+            <h1> Escola de Administração Judiciária </h1>
+        </div>
+    </div>
+
+    <div class="easyAccess">
+        <a href="https://www3.tjrj.jus.br/segweb/faces/login.jsp?SIGLASISTEMA=ESAJ_INTERNET" style="background-color: #384671;" title="Inscrições cursos ESAJ, histórico e demais consultas" target="_blank"> INSCRIÇÕES E CONSULTAS </a>
+        <a href="http://www4.tjrj.jus.br/esajead/login/index.php" style="background-color: #7F669D;" title="Acesso ao ambiente virtual de aprendizagem dos Cursos a Distância" target="_blank"> ACESSO AO CURSO </a>
+        <a href="http://www4.tjrj.jus.br/esajead/course/index.php?categoryid=36" style="background-color: #BE8C63;" title="TURMAS DE ACESSO RÁPIDO - SEM INSCRIÇÃO PRÉVIA Realize sua capacitação agora!"> TURMAS SEM INSCRIÇÃO </a>
+        <a href="https://www4.tjrj.jus.br/ESAJInterface/cursosregulares.aspx" style="background-color: #5F939A;" title="CURSOS REGULARES E CONTEÚDO PROGRAMÁTICO"> PROGRAMAÇÃO </a>
+    </div>
+    
+    <header>
+        <div>
+            <a href="index.html">
+                <img width="45" height="57" alt="Logo da ESAJ" src="./assets/media/logo_white.webp"/>
+            </a>
+            <div id="menuAccess">
+                <svg viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            </div>
+        </div>
+
+        <div>
+            <a href="#contact"> Contato </a>
+            <a href="mailto:esaj.faleconosco@tjrj.jus.br"> Fale conosco </a>
+
+            <div class="divider"></div>
+
+            <div class="socialmedia">
+                <svg onclick="NavigateToScreen('https://www.instagram.com/esajoficialtjrj/')" viewBox="0 0 512 512"><path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"/><path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"/></svg>
+                <svg onclick="NavigateToScreen('https://web.facebook.com/esajoficialtjrj?_rdc=1&_rdr')" viewBox="0 0 512 512"><path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd"/></svg>
+                <svg onclick="NavigateToScreen('https://www.youtube.com/channel/UCy9ggCv5z9kI-25Sqj6y1Dw')" viewBox="0 0 512 512"><path d="M508.64 148.79c0-45-33.1-81.2-74-81.2C379.24 65 322.74 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149 1 184.59-.06 220.19 0 255.79q-.15 53.4 3.4 106.9c0 45 33.1 81.5 73.9 81.5 58.2 2.7 117.9 3.9 178.6 3.8q91.2.3 178.6-3.8c40.9 0 74-36.5 74-81.5 2.4-35.7 3.5-71.3 3.4-107q.34-53.4-3.26-106.9zM207 353.89v-196.5l145 98.2z"/></svg>
+            </div>
+        </div>
+    </header>
+
+    <div id="headerPage">
+        <div class="carousel">
+            <div class="slide active">
+                <img alt="Novembro Azul" loading="lazy" src="./assets/media/carouselPrincipal/NovembroAzul.webp"/>
+            </div>
+            <div class="slide">
+                <img alt="Foto dos palestrantes do evento em parceria ESAJ e Núcleo de Auditoria Interna" loading="lazy" src="./assets/media/carouselPrincipal/IMG-20230529-WA0003.webp"/>
+                <h2> Parceria ESAJ e Núcleo de Auditoria Interna </h2>
+                <h1> Primeiro evento em parceria ESAJ e Núcleo de Auditoria Interna </h1>
+            
+                <a class="btnDefault" href="./noticias/iia-nucleo-de-auditoria-interna.html"> <p> MAIS INFORMAÇÕES </p> </a>
+            </div>
+            <div class="slide">
+                <video autoplay muted loop>
+                    <source src="./assets/media/carouselPrincipal/ESAJEncantar.mp4"/>
+                    <p> Desculpa, o seu navegador não suporta vídeos incorporados, mas você pode <a href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fportaltj.tjrj.jus.br%2Fweb%2Fguest%2Fnoticias%2Fnoticia%2F-%2Fvisualizar-conteudo%2F10136%2F178490891&data=05%7C01%7C%7Ca398961987a44baac5a708db44e60ed7%7Cce4e1164986f413285d11e3c17cf7d6e%7C0%7C0%7C638179527102519611%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=GMeh1V3P0NhPABL%2B0Jpf24YnUU%2BfI039dTA%2B2YwZkw0%3D&reserved=0"> acessar mais informações </a> sobre o evento </p>
+                </video>
+                <h2> Projeto Encantar - Formação de laboratoristas </h2>
+                <h1> Inovação: magistrados e servidores participam do ciclo de formação de laboratoristas </h1>
+                
+                <a class="btnDefault" href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fportaltj.tjrj.jus.br%2Fweb%2Fguest%2Fnoticias%2Fnoticia%2F-%2Fvisualizar-conteudo%2F10136%2F178490891&data=05%7C01%7C%7Ca398961987a44baac5a708db44e60ed7%7Cce4e1164986f413285d11e3c17cf7d6e%7C0%7C0%7C638179527102519611%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=GMeh1V3P0NhPABL%2B0Jpf24YnUU%2BfI039dTA%2B2YwZkw0%3D&reserved=0"> <p> MAIS INFORMAÇÕES </p> </a>
+            </div>
+            <div class="slide">
+                <video autoplay muted loop>
+                    <source src="./assets/media/carouselPrincipal/VID-20230529-WA0010.mp4"/>
+                    <p> Desculpa, o seu navegador não suporta vídeos incorporados, mas você pode <a href="./noticias/iia-nucleo-de-auditoria-interna.html"> acessar mais informações </a> sobre o evento </p>
+                </video>
+                <h2> Parceria ESAJ e Núcleo de Auditoria Interna </h2>
+                <h1> Primeiro evento em parceria ESAJ e Núcleo de Auditoria Interna </h1>
+                
+                <a class="btnDefault" href="./noticias/iia-nucleo-de-auditoria-interna.html"> <p> MAIS INFORMAÇÕES </p> </a>
+            </div>
+            <div class="slide">
+                <img alt="Foto da turma do projeto Encantar - Formação de laboratoristas" loading="lazy" src="./assets/media/carouselPrincipal/CARROSSEL-site (1).webp"/>
+                <h2> Projeto Encantar - Formação de laboratoristas </h2>
+                <h1> Inovação: magistrados e servidores participam do ciclo de formação de laboratoristas </h1>
+
+                <a class="btnDefault" href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fportaltj.tjrj.jus.br%2Fweb%2Fguest%2Fnoticias%2Fnoticia%2F-%2Fvisualizar-conteudo%2F10136%2F178490891&data=05%7C01%7C%7Ca398961987a44baac5a708db44e60ed7%7Cce4e1164986f413285d11e3c17cf7d6e%7C0%7C0%7C638179527102519611%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=GMeh1V3P0NhPABL%2B0Jpf24YnUU%2BfI039dTA%2B2YwZkw0%3D&reserved=0"> <p> MAIS INFORMAÇÕES </p> </a>
+            </div>
+            <div class="slide">
+                <video autoplay muted loop>
+                    <source src="./assets/media/carouselPrincipal/VID-20230529-WA0009.mp4"/>
+                    <p> Desculpa, o seu navegador não suporta vídeos incorporados, mas você pode <a href="./noticias/iia-nucleo-de-auditoria-interna.html"> acessar mais informações </a> sobre o evento </p>
+                </video>
+                <h2> Parceria ESAJ e Núcleo de Auditoria Interna </h2>
+                <h1> Primeiro evento em parceria ESAJ e Núcleo de Auditoria Interna </h1>
+            
+                <a class="btnDefault" href="./noticias/iia-nucleo-de-auditoria-interna.html"> <p> MAIS INFORMAÇÕES </p> </a>
+            </div>
+        </div>
+
+        <div class="move-down">
+            <svg viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="42" d="M112 184l144 144 144-144"/></svg>
+            <svg viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="42" d="M112 184l144 144 144-144"/></svg>
+        </div>
+    </div>
+
+    <section class="fast-access">
+        <div>
+            <a href="https://www3.tjrj.jus.br/segweb/faces/login.jsp?SIGLASISTEMA=ESAJ_INTERNET" style="background-color: #384671; border-bottom: 10px solid #2a3658;" title="Inscrições cursos ESAJ, histórico e demais consultas" target="_blank">
+                <h2 style="color: #5a7477;"> Inscrições e Consultas </h2>
+                <p> Inscrições cursos ESAJ, histórico e demais consultas </p>
+            </a>
+            <a href="http://www4.tjrj.jus.br/esajead/login/index.php" style="background-color: #7F669D; border-bottom: 10px solid #3e334d;" title="Acesso ao ambiente virtual de aprendizagem dos Cursos a Distância" target="_blank">
+                <h2 style="color: #3e334d;"> Acesso as turmas ao vivo e EAD </h2>
+                <p> Acesso ao ambiente virtual de aprendizagem (Plataforma Moodle) para a realização dos Cursos a Distância </p>
+            </a>
+            <a href="http://www4.tjrj.jus.br/esajead/course/index.php?categoryid=36" style="background-color: #BE8C63; border-bottom: 10px solid #654b35;" title="TURMAS DE ACESSO RÁPIDO - SEM INSCRIÇÃO PRÉVIA Realize sua capacitação agora!">
+                <h2 style="color: #654b35;"> Turma sem inscrição prévia </h2>
+                <p> Realize sua capacitação agora! </p>
+            </a>
+            <a href="https://www4.tjrj.jus.br/ESAJInterface/cursosregulares.aspx" style="background-color: #5F939A; border-bottom: 10px solid #2b4346;" title="CURSOS REGULARES E CONTEÚDO PROGRAMÁTICO">
+                <h2 style="color: #2b4346;"> Conteúdo programático dos cursos </h2>
+                <p> Cursos Regulares e Conteúdo Programático </p>
+            </a>
+        </div>
+    </section>
+
+    <section id="access" class="access-moodle banner-style">
+        <div>
+            <h1> PLATAFORMA MOODLE </h1>
+            <h2> Acesse seu curso aqui! </h2>
+            <p> Acesso ao ambiente virtual de aprendizagem (Plataforma Moodle) para a realização dos cursos a distância, como Palestras ao vivo, Cursos e Minicursos, Videoaulas e Workshops </p>
+        
+            <button class="btnDefault" onclick="NavigateToScreen('http://www4.tjrj.jus.br/esajead/login/index.php')"> <p> ACESSAR CURSO </p> </button>   
+        </div>
+    </section>
+
+    <section class="feed">
+        <div class="post" data-post-type="image">
+            <div>
+                <a aria-label="Aviso! Faça suas 30 horas" href="./assets/media/post/Aviso30.webp" target="_blank">
+                    <img width="786" height="619" loading="lazy" title="Aviso! Faça suas 30 horas" alt="Aviso! Faça suas 30 horas" src="./assets/media/post/Aviso30.webp"/>
+                </a>
+            </div>
+            <main>
+                <h1> AVISO </h1>
+                <h2> 30 Horas Anuais </h2>
+                <p> Prezado servidor, caso não tenha alcançado as 30 horas anuais de capacitação, inscreva-se nas atividades futuras que deverão ser realizadas até dia 14/12/2023 </p>
+            </main>
+        </div>
+        <div class="post" data-post-type="image">
+            <div>
+                <a aria-label="Ver cartaz do PJe" href="./assets/media/post/Cartaz PJE.webp" target="_blank">
+                    <img width="786" height="619" loading="lazy" title="Cartaz PJE" alt="Cartaz PJE" src="./assets/media/post/Cartaz PJE.webp"/>
+                </a>
+            </div>
+            <main>
+                <h1> PROCESSAMENTO JUDICIAL ELETRÔNICO </h1>
+                <h2> Curso de Aperfeiçoamento de Magistrados em parceria com a ESAJ </h2>
+
+                <div class="row">
+                    <a class="btnDefault" href='https://site.emerj.jus.br/cursos/5'> <p> SAIBA MAIS </p> </a>
+                    <a class="btnDefault" href='http://www4.tjrj.jus.br/EVENTOSINSCRICAOWEB/ListaEventos.aspx'> <p> INSCREVA-SE </p> </a>
+                </div>
+            </main>
+        </div>
+        <div class="post" data-post-type="image">
+            <div>
+                <a aria-label="Ver banner 3ª Turma de Pós-Graduação em Integridade na Gestão Pública e Direitos Humanos" href="./assets/media/post/Banner pós graduação.webp" target="_blank">
+                    <img width="786" height="619" loading="lazy" title="3ª Turma de Pós-Graduação em Integridade na Gestão Pública e Direitos Humanos" alt="Integridade na Gestão Pública e Direitos Humanos - 3ª Turma" src="./assets/media/post/Banner pós graduação.webp"/>
+                </a>
+            </div>
+            <main>
+                <h1> PÓS-GRADUAÇÃO </h1>
+                <h2> Integridade na Gestão Pública e Direitos Humanos </h2>
+                <p> A Escola de Administração Judiciária comunica que realizará uma nova turma de Pós-Graduação em "Integridade na Gestão Pública e Direitos Humanos" com inscrições via Microsoft Forms disponível a partir de 02/10/2023. </p>
+                
+                <div class="row">
+                    <a class="btnDefault" title="Edital Pós-Graduação" target="_blank" href='./assets/integridade-na-gestao-publica-e-direitos-humanos/EDITAL_1-5.pdf'> <p> EDITAL </p> </a>
+                    <a class="btnDefault" title="Formulário de inscrição Pós-Graduação" target="_blank" href='https://forms.office.com/Pages/ResponsePage.aspx?id=ZBFOzm-YMkGF0R48F899bkhO-yRAXQFDo8eUpzPOdDtUMlUxU0xaUjdJSlJDSzBIQkFPN09IUUZFRS4u'> <p> INSCREVA-SE </p> </a>
+                </div>
+            </main>
+        </div>
+        <div class="post" data-post-type="video">
+            <div>
+                <div class="play">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M112 111v290c0 17.44 17 28.52 31 20.16l247.9-148.37c12.12-7.25 12.12-26.33 0-33.58L143 90.84c-14-8.36-31 2.72-31 20.16z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="15"/></svg>
+                </div>
+                <video width="786" height="619" poster="./assets/media/carouselPrincipal/IMG-20230529-WA0003.webp">
+                    <source src="./assets/media/carouselPrincipal/VID-20230529-WA0009.mp4"/>
+                    <p> Desculpa, o seu navegador não suporta vídeos incorporados, mas você pode <a href="./noticias/iia-nucleo-de-auditoria-interna.html"> acessar mais informações </a> sobre o evento </p>
+                </video>
+            </div>
+            <main>
+                <h1> PARCERIA ESAJ E NÚCLEO DE AUDITORIA INTERNA </h1>
+                <h2> Primeiro evento em parceria ESAJ e Núcleo de Auditoria Interna </h2>
+            
+                <a class="btnDefault" href='./noticias/iia-nucleo-de-auditoria-interna.html'> <p> SAIBA MAIS </p> </a>
+            </main>
+        </div>
+        <div class="post" data-post-type="image">
+            <div>
+                <a aria-label="Ver cartaz parceria ESAJ e Núcleo de Auditoria Interna" href="./assets/media/post/Banner Aditoria Interna.webp" target="_blank">
+                    <img width="786" height="619" loading="lazy" title="Cartaz do Mês Internacional de Conscientização da Auditoria Interna: Juntos pela transparência" alt="Cartaz do Mês Internacional de Conscientização da Auditoria Interna: Juntos pela transparência" src="./assets/media/post/Banner Aditoria Interna.webp"/>
+                </a>
+            </div>
+            <main>
+                <h1> PARCERIA ESAJ E NÚCLEO DE AUDITORIA INTERNA </h1>
+                <h2> Primeiro evento em parceria ESAJ e Núcleo de Auditoria Interna </h2>
+            
+                <a class="btnDefault" href='./noticias/iia-nucleo-de-auditoria-interna.html'> <p> SAIBA MAIS </p> </a>
+            </main>
+        </div>
+    </section>
+
+    <section class="palestras">
+        <h1> NOSSAS PALESTRAS MAIS RECENTES </h1>
+        <div>   
+            <div>
+                <a href="./assets/media/eventos/PVSAO.webp">
+                    <img alt="SANEAMENTO BÁSICO: TARDIO, IMPRESCINDÍVEL E JUSTO" src="./assets/media/eventos/PVSAO.webp">
+                </a>
+                <main>
+                    <a href="./views/Eventos/eventos.html"> SANEAMENTO BÁSICO: TARDIO, IMPRESCINDÍVEL E JUSTO </a>
+                </main>
+            </div>
+            <div>
+                <a href="./assets/media/eventos/PVMAM.webp">
+                    <img src="./assets/media/eventos/PVMAM.webp" alt="CÂNCER DE MAMA, COMO PREVENIR">
+                </a>
+                <main>
+                    <a href="./views/Eventos/eventos.html"> CÂNCER DE MAMA, COMO PREVENIR </a>
+                </main>
+            </div>
+            <div>
+                <a href="./assets/media/eventos/PVTED.webp">
+                    <img src="./assets/media/eventos/PVTED.webp" alt="TECNOLOGIAS DESCENTRALIZADAS E O FUTURO DO PODER JUDICIÁRIO">
+                </a>
+                <main>
+                    <a href="./views/Eventos/eventos.html"> TECNOLOGIAS DESCENTRALIZADAS E O FUTURO DO PODER JUDICIÁRIO </a>
+                </main>
+            </div>
+           
+            <div>
+                <a href="./assets/media/eventos/PVPOR.webp">
+                    <img src="./assets/media/eventos/PVPOR.webp" alt="A RESPONSABILIDADE CIVIL DECORRENTE DA PORNOGRAFIA DE VINGANÇA COMO VIOLÊNCIA DE GÊNERO">
+                </a>
+                <main>
+                    <a href="./views/Eventos/eventos.html"> A RESPONSABILIDADE CIVIL DECORRENTE DA PORNOGRAFIA DE VINGANÇA COMO VIOLÊNCIA DE GÊNERO </a>
+                </main>
+            </div>  
+            <div>
+                <a href="./assets/media/eventos/PVSUU.webp">
+                    <img src="./assets/media/eventos/PVSUU.webp" alt="SUICÍDIO: COMO PREVENIR?">
+                </a>
+                <main>
+                    <a href="./views/Eventos/eventos.html"> SUICÍDIO: COMO PREVENIR? </a>
+                </main>
+            </div>
+        </div>
+
+        <a href="./views/Eventos/eventos.html"> VER MAIS PALESTRAS </a>
+    </section>
+
+    <section class="cursos">
+        <h1> Parceria ESAJ e EVG </h1>
+        <p> A ESAJ em parceria com a Escola Virtual de Governo-EVG, da Escola Nacional de Administração Pública-ENAP, avisa que estão abertas as inscrições para os cursos <strong>INTRODUÇÃO À LIBRAS</strong> e <strong>INTRODUÇÃO À AUDIODESCRIÇÃO</strong>, destinados aos servidores do TJRJ. </p>
+        <p> Os cursos valerão horas pela ESAJ, e cada concluinte receberá um certificado expedido pelo próprio site, o qual deverá ser encaminhado para <a class="link dark" href="mailto:esajsedis@tjrj.jus.br">esajsedis@tjrj.jus.br</a>, a fim de que a carga-horária seja computada. <strong>NÃO</strong> precisa de pré-autorização. Poderão ser computadas até 30 horas para promoção/progressão. Os cursos são em EAD e ficam disponíveis por 40 dias. </p>
+        <p> Seguem cada turma para acesso e inscrição: </p>
+
+        <div class="row">
+            <a class="btnDefault" href='https://www.escolavirtual.gov.br/curso/11'> <p> INTRODUÇÃO À LIBRAS </p> </a>
+            <a class="btnDefault" href='https://www.escolavirtual.gov.br/curso/320#:~:text=A%20audiodescri%C3%A7%C3%A3o%20%C3%A9%20um%20recurso,constru%C3%A7%C3%A3o%20de%20uma%20sociedade%20inclusiva'> <p> INTRODUÇÃO À AUDIODESCRIÇÃO </p> </a>
+        </div>
+    </section>
+
+    <section class="infoDisplay default">
+        <h1> Algumas <span>informações</span> úteis </h1>
+
+        <div>
+            <div class="info">
+                <div class="top">
+                    <h2> <span> # </span> Carga horária anual </h2>
+                </div>
+                <p> Solicitamos que verifique sua carga horária, lembrando que serão computadas, no máximo, <strong>30 horas</strong> anuais para efeitos de promoção/progressão na carreira. </p>
+                <p> A responsabilidade pelo acompanhamento da pontuação lançada é do próprio servidor, o qual poderá, até o último dia do ano seguinte, interpor reclamação quanto a erros no lançamento das horas. </p>
+            </div>
+            <div class="info">
+                <div class="top">
+                    <h2> <span> # </span> Lançamento de horas - Eventos EMERJ </h2>
+                </div>
+                <p> Para os eventos WEBINAR, não será necessária a solicitação individual de cômputo de horas. Os eventos serão registrados no histórico de todos os servidores que constarem na listagem de concluintes da EMERJ. </p>
+            </div>
+            <div class="info">
+                <div class="top">
+                    <h2> <span> # </span> Uso do e-mail individual corporativo </h2>
+                </div>
+                <p> Informamos que os servidores deverão utilizar seus e-mails funcionais para inscrição e participação nas turmas, palestras e outros eventos realizados pela Escola. Ressaltamos que todas as comunicações da ESAJ serão encaminhadas para o referido email, sendo necessário que o servidor acompanhe as mensagens. </p>
+            </div>
+            <div class="info">
+                <div class="top">
+                    <h2> <span> # </span> Carga horária em eventos de capacitação </h2>
+                </div>
+                <p> A ESAJ informa aos servidores que os pedidos para atribuição da carga horária referente aos cursos/eventos externos deverão ser feitos, IMPRETERIVELMENTE, até o último dia útil antes do recesso forense, PREFERENCIALMENTE para o e-mail: <a class="link" href="mailto:esajsedis@tjrj.jus.br">esajsedis@tjrj.jus.br</a> , em cumprimento a Res. do Conselho da Magistratura 02/2020, art.12, §1º, III. A responsabilidade pelo acompanhamento da carga-horária computada nos eventos de capacitação é do próprio servidor, que deverá acompanhar os lançamentos através do seu HISTÓRICO, no Sistema da ESAJ. </p>
+            </div>
+            <div class="info">
+                <div class="top">
+                    <h2> <span> # </span> Material didático na intranet </h2>
+                </div>
+                <p> O servidor que tiver realizado sua inscrição online poderá baixar o material didático diretamente da Intranet, clicando em SISTEMA DE CONTROLE DE CURSOS - Internet - Material Didático. </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h1> VEJA NOSSO INFORMATIVO </h1>
+        <a href="./assets/informativos/INFORMATIVO-ESAJ-06A.pdf" target="_blank">
+            <svg viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M184 112l144 144-144 144"/></svg>
+        </a>
+    </section>
+
+    <section class="programacao">
+        <h1> Programação dos cursos </h1>
+        <p> A ESAJ disponibiliza mensalmente a programação de cursos para fins de capacitação e progressão dos servidores do TJRJ. No ato da inscrição deve ser observado o público-alvo de cada curso. </p>
+        <p> O servidor não poderá faltar a mais de 20% das horas-aula de treinamento. Caso desista do curso após o seu início, deverá justificar por email o motivo da desistência, com a ciência da chefia imediata, a fim de evitar a incidência de penalidade - <a class="link dark" href="mailto:seinf.frequencia@tjrj.jus.br">seinf.frequencia@tjrj.jus.br</a>. A reprovação por nota não impede a participação em outros cursos da ESAJ, no entanto, não serão contabilizadas as horas de capacitação. </p>
+    
+        <div>
+            <a class="btnDefault" href='http://www4.tjrj.jus.br/esajead/login/index.php'> <p> PROGRAMAÇÃO MENSAL COMPLETA </p> </a>
+            <a class="btnDefault" href='http://www4.tjrj.jus.br/esajead/login/index.php'> <p> INSCRIÇÕES EM CURSOS COM VAGAS DISPONÍVEIS </p> </a>
+        </div>
+    </section>
+
+    <section class="fiquepordentro">
+        <div>
+            <a href="./textos/violencia-e-genero.html">
+                <img src="./assets/media/fiquePorDentro/Genero e Violencia Domestica.webp" alt="Gênero e Violência doméstica" loading="lazy"/>
+                <h1> Gênero e Violência doméstica </h1>
+                <div>
+                    <svg viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M268 112l144 144-144 144M392 256H100"/></svg>
+                </div>
+            </a>
+            <a href="./textos/ambiental-e-sustentabilidade.html">
+                <img src="./assets/media/fiquePorDentro/Sustentabilidade.webp" alt="Ambiental e Sustentabilidade" loading="lazy">
+                <h1> Ambiental e Sustentabilidade </h1>
+                <div>
+                    <svg viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M268 112l144 144-144 144M392 256H100"/></svg>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="./textos/acessibilidade-e-inclusao.html">
+                <img src="./assets/media/fiquePorDentro/Acessibilidade e Inclusao.webp" alt="Acessibilidade e Inclusão" loading="lazy">
+                <h1> Acessibilidade e Inclusão </h1>
+                <div>
+                    <svg viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M268 112l144 144-144 144M392 256H100"/></svg>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/embed/COSXUP0ySwI">
+                <img src="./assets/media/fiquePorDentro/Compliance.webp" alt="Compliance e Governança" loading="lazy">
+                <h1> Compliance e Governança </h1>
+                <div>
+                    <svg viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M268 112l144 144-144 144M392 256H100"/></svg>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="accord default">
+
+        <h1> Conheça nossos <span> parceiros </span> </h1>
+
+        <div>
+            <a href="./views/Convenios/convenios.html">
+                <img loading="lazy" src="./assets/convenios/Estacio/Estacio.webp" title="Estácio" alt="Estácio"/>
+            </a>
+            <a href="./views/Convenios/convenios.html">
+                <img loading="lazy" src="./assets/convenios/TCERJ/TCERJ.webp" title="TCE RJ" alt="TCE RJ"/>
+            </a>
+            <a href="./views/Convenios/convenios.html">
+                <img loading="lazy" src="./assets/convenios/TRERJ/TRERJ.webp" title="TRE RJ" alt="TRE RJ"/>
+            </a>
+            <a href="./views/Convenios/convenios.html">
+                <img loading="lazy" src="./assets/convenios/Unyleya/Unyleya.webp" title="Unyleya" alt="Unyleya"/>
+            </a>
+            <a href="./views/Convenios/convenios.html">
+                <img loading="lazy" src="./assets/convenios/IBMEC/Ibmec.webp" title="Ibmec" alt="Ibmec"/>
+            </a>
+            <a href="./views/Convenios/convenios.html">
+                <img loading="lazy" src="./assets/convenios/UVA/UVA.webp" title="UVA" alt="UVA"/>
+            </a>
+            <a href="./views/Convenios/convenios.html">
+                <img loading="lazy" src="./assets/convenios/FIURJ/FIURJ.webp" title="FUIRJ" alt="FUIRJ"/>
+            </a>
+        </div>
+    </section>
+    
+    <footer id="contact">
+            <img width="90" height="114" alt="Logo da ESAJ" src="./assets/media/logo_white.webp"/>
+
+            <div>
+                <div>
+                    <svg viewBox="0 0 512 512"><path d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0025.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="256" cy="192" r="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    <p> Rua Dom Manuel, 29 - 4º e 5º andar - Centro, Rio de Janeiro </p>
+                </div>
+                <div>
+                    <svg viewBox="0 0 512 512"><path d="M451 374c-15.88-16-54.34-39.35-73-48.76-24.3-12.24-26.3-13.24-45.4.95-12.74 9.47-21.21 17.93-36.12 14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48 5.41-23.23 14.79-36c13.22-18 12.22-21 .92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9 44 119.9 47 108.83 51.6A160.15 160.15 0 0083 65.37C67 76 58.12 84.83 51.91 98.1s-9 44.38 23.07 102.64 54.57 88.05 101.14 134.49S258.5 406.64 310.85 436c64.76 36.27 89.6 29.2 102.91 23s22.18-15 32.83-31a159.09 159.09 0 0013.8-25.8C465 391.17 468 391.17 451 374z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                    <p> (21) 3133-2103 </p>
+                </div>
+                <div>
+                    <svg viewBox="0 0 512 512"><rect x="48" y="96" width="416" height="320" rx="40" ry="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M112 160l144 112 144-112"/></svg>
+                    <p> esaj@tjrj.jus.br </p>
+                </div>
+                <div>
+                    <svg viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
+                    <p> @esajoficialtjrj </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="goToTop" class="hidden">
+        <svg viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36" d="M112 244l144-144 144 144M256 120v292"/></svg>
+    </div>
+
+    <script async defer src="./globalScript.js"></script>
+    <script async defer src="./index.js"></script>
+</body>
+</html>
