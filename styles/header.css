@@ -11,6 +11,7 @@ body > header {
     height: 80px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
     transition: transform .2s, backdrop-filter .4s, background-color .4s, left .3s !important;
+    user-select: none;
 }
 
 @media (max-width: 550px) {

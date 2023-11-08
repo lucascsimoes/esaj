@@ -563,12 +563,12 @@ body > header {
     }
 }
 
-section.palestras {
+section.eventos {
     padding-block: 100px;
     background-color: #111217;
 }
 
-section.palestras > h1 {
+section.eventos > h1 {
     text-align: center;
     margin-bottom: 150px;
     color: white;
@@ -577,7 +577,7 @@ section.palestras > h1 {
     font-weight: 600;
 }
 
-section.palestras > div {
+section.eventos > div {
     display: flex;
     align-items: start;
     justify-content: center;
@@ -586,7 +586,7 @@ section.palestras > div {
     
 }
 
-section.palestras > div > div {
+section.eventos > div > div {
     display: flex;
     flex-direction: column;
     min-width: 200px;
@@ -597,42 +597,42 @@ section.palestras > div > div {
     border: 1px solid #18191e;
 }
 
-section.palestras > div > div > a {
+section.eventos > div > div > a {
     display: flex;
     overflow: hidden;
 }
 
-section.palestras > div > div > a > img {
+section.eventos > div > div > a > img {
     width: 100%;
     transform: scale(1);
     transition: transform 1s cubic-bezier(.7,0,.3,1);
 }
 
-section.palestras > div > div > a > img:hover {
+section.eventos > div > div > a > img:hover {
     transform: scale(1.1);
     transition: transform 1s cubic-bezier(.7,0,.3,1);
 }
 
-section.palestras > div > div > main {
+section.eventos > div > div > main {
     background-color: #18191e;
     padding: 20px;
 }
 
-section.palestras > div > div > main > a {
+section.eventos > div > div > main > a {
     font-size: 15px;
     color: white;
 }
 
-section.palestras > div > div > main > a:visited,
-section.palestras > div > div > main > a:active {
+section.eventos > div > div > main > a:visited,
+section.eventos > div > div > main > a:active {
     color: white;
 }
 
-section.palestras > div > div > main > a:hover {
+section.eventos > div > div > main > a:hover {
     text-decoration: underline;
 }
 
-section.palestras > a {
+section.eventos > a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -646,7 +646,7 @@ section.palestras > a {
     transition: color .35s, border-color .35s;
 }
 
-section.palestras > a:hover {
+section.eventos > a:hover {
     color: #8b8b8b;
     border-color: #8b8b8b;
     transition: color .35s, border-color .35s;

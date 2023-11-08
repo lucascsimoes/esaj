@@ -1,0 +1,183 @@
+body {
+    background-color: #201f27 !important;
+}
+
+body > .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 65vh;
+}
+
+body > .intro > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+    -o-object-position: center;
+}
+
+body > .intro > h1 {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-inline: 40px;
+}
+
+body > .intro::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-225deg,rgba(0,78,146,0.65) 0%,rgba(0,12,64,0.65) 20%);
+}
+
+body > section {
+    color: white;
+    padding: 50px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+body > section > h2 {
+    position: relative;
+    font-size: 30px;
+    margin-bottom: 20px;
+    background-color: #111217;
+    padding-inline: 10px;
+}
+
+body > section > h2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 15px;
+    height: 100%;
+    background-color: #111217;
+}
+
+body > section > p {
+    hyphens: auto;
+}
+
+body > section:nth-child(2n) > h2 {
+    margin-left: 22px;
+}
+
+body > section:nth-child(2n) > p {
+    text-align: left;
+}
+
+body > section:nth-child(2n) > h2::after {
+    left: -22px;
+}
+
+body > section:nth-child(2n) > .btnDefault {
+    margin-right: auto;
+}
+
+body > section:nth-child(2n + 1) > h2 {
+    text-align: right;
+    margin-right: 22px;
+}
+
+body > section:nth-child(2n + 1) > p {
+    text-align: right;
+}
+
+body > section:nth-child(2n + 1) > h2::after {
+    right: -22px;
+}
+
+body > section:nth-child(2n + 1) > .btnDefault {
+    margin-left: auto;
+}
+
+body > section .btnDefault {
+    width: fit-content;
+    margin-block: 30px;
+}
+
+body > section .media > video {
+    margin-block: 30px;
+    width: 100%;
+    max-height: 447px;
+    height: 100%;
+    border: 8px solid #111217;
+}
+
+body > section.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body > section.image .btnDefault {
+    margin-inline: auto;
+}
+
+body > section .media > img {
+    border: 8px solid #111217;
+    max-width: 600px;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    body > section {
+        width: 100%;
+        padding: 50px 30px;
+    }
+}
+
+@media (max-width: 567px) {
+    body > .grid {
+        padding-inline: 20px;
+    }
+}
+
+/* body > .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 567px));
+    gap: 50px;
+    padding: 50px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+body > .grid > div > p {
+    text-indent: 50px;
+    text-align: justify;
+    hyphens: auto;
+    font-size: 15px;
+}
+
+body > .grid > div > h4 {
+    margin-block: 20px;
+}
+
+BODY > section {
+    width: ;
+}
+
+@media (max-width: 700px) {
+    body > .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 567px) {
+    body > .grid {
+        padding-inline: 20px;
+    }
+} */

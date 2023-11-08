@@ -81,7 +81,6 @@ html, body {
     min-height: 100vh;
     background-color: #ebebeb;
     font-family: 'Poppins', sans-serif;
-    /* overflow-x: hidden; */
 }
 
 body.blockScroll {
